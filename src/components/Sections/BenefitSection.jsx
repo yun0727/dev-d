@@ -1,4 +1,4 @@
-import SlideBox from "../common/SlideBox";
+import SlideCard from "../common/SlideCard";
 import TextBox from "../common/TextBox";
 import ArrowIcon from "../../assets/icon/indigo-arrow.svg?react";
 
@@ -53,32 +53,32 @@ export default function BenefitSection() {
           style={{ width: "fit-content" }}
         >
           {slideItems.map((item) => (
-            <SlideBox key={item.id}>
-              <SlideBox.Title>
+            <SlideCard key={item.id}>
+              <SlideCard.Title>
                 {item.title} <br />
                 {item.benefit}
-              </SlideBox.Title>
-              <SlideBox.Detail
+              </SlideCard.Title>
+              <SlideCard.Detail
                 src={item.icon}
                 text={item.store}
                 width={item.width}
                 height={item.height}
               />
-            </SlideBox>
+            </SlideCard>
           ))}
           {slideItems.map((item) => (
-            <SlideBox key={`duplicate-${item.id}`}>
-              <SlideBox.Title>
+            <SlideCard key={`duplicate-${item.id}`}>
+              <SlideCard.Title>
                 {item.title} <br />
                 {item.benefit}
-              </SlideBox.Title>
-              <SlideBox.Detail
+              </SlideCard.Title>
+              <SlideCard.Detail
                 src={item.icon}
                 text={item.store}
                 width={item.width}
                 height={item.height}
               />
-            </SlideBox>
+            </SlideCard>
           ))}
         </div>
       </div>

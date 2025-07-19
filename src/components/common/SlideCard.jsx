@@ -1,4 +1,4 @@
-function SlideBox({ children }) {
+function SlideCard({ children }) {
   return (
     <div className="w-[168px] h-[120px] bg-slate-100 rounded-[10px] pt-[20px] pl-[16px]">
       {children}
@@ -6,7 +6,7 @@ function SlideBox({ children }) {
   );
 }
 
-function SlideBoxTitle({ children }) {
+function SlideCardTitle({ children }) {
   return (
     <div className="text-zinc-900 text-[16px] font-[700] leading-snug">
       {children}
@@ -14,7 +14,7 @@ function SlideBoxTitle({ children }) {
   );
 }
 
-function SlideBoxDetail({ src, text, width, height }) {
+function SlideCardDetail({ src, text, width, height }) {
   return (
     <div className="flex items-center mt-[20px] gap-[8px]">
       <img
@@ -26,7 +26,7 @@ function SlideBoxDetail({ src, text, width, height }) {
     </div>
   );
 }
-SlideBox.Title = SlideBoxTitle;
-SlideBox.Detail = SlideBoxDetail;
+SlideCard.Title = SlideCardTitle;
+SlideCard.Detail = SlideCardDetail;
 
-export default SlideBox;
+export default SlideCard;
