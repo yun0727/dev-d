@@ -15,3 +15,8 @@
   font-family: "line-seed-bd";
   src: url("./assets/fonts/LINESeedKR-Bd.ttf");
 }
+
+/* 호버 시 애니메이션 일시정지 */
+.hover\:pause:hover {
+  animation-play-state: paused;
+}

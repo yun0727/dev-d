@@ -50,8 +50,12 @@ export default function AnimationSection() {
         <img
           src={image.src}
           alt={image.alt}
-          className={`w-[${image.width}] h-[${image.height}] animate-float mx-2`}
-          style={{ animationDelay: image.delay }}
+          className="animate-float mx-2"
+          style={{
+            width: image.width,
+            height: image.height,
+            animationDelay: image.delay,
+          }}
         />
       ))}
     </div>
