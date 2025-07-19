@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+#root {
+  background-color: #f5f5f5;
+}
+
 @font-face {
   font-family: "line-seed-rg";
   src: url("./assets/fonts/LINESeedKR-Rg.ttf");

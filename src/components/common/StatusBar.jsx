@@ -1,6 +1,6 @@
-import NetworkIcon from "../assets/icon/Cellular Connection.svg?react";
-import WifiIcon from "../assets/icon/Wifi.svg?react";
-import BatteryIcon from "../assets/icon/Battery.svg?react";
+import NetworkIcon from "../../assets/icon/Cellular Connection.svg?react";
+import WifiIcon from "../../assets/icon/Wifi.svg?react";
+import BatteryIcon from "../../assets/icon/Battery.svg?react";
 
 export default function StatusBar() {
   return (

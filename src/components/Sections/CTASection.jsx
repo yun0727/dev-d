@@ -1,4 +1,4 @@
-import ArrowDownIcon from "../assets/icon/down-Vector.svg?react";
+import ArrowDownIcon from "../../assets/icon/down-Vector.svg?react";
 export default function CTASection() {
   return (
     <>
